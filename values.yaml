@@ -540,7 +540,7 @@ global:
   ##
   credentials:
     username: puppetdb
-    password: ""
+    password: "flex.123"
     ## If used, the following existing secret must contain "username" and "password" keys.
     ## NOTE: Using this secret supercedes all other credentials settings.
     ##
@@ -588,7 +588,7 @@ storage:
   ##
   ## Please check the `README.md` for more information
   ## regarding useful scenarios about "storageClass".
-  storageClass: ""
+  storageClass: "default"
   ## Puppetserver data Persistent Volume annotations
   ##
   annotations: {}
