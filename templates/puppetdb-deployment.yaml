@@ -84,7 +84,13 @@ spec:
             - name: {{ $key }}
               value: "{{ $value }}"
             {{- end }}
+          securityContext:
+            runAsUser: 0
+            runAsNonRoot: false
+            privileged: true
+            
           ports:
+            
             - name: puppetboard
               containerPort: 80
           volumeMounts:
