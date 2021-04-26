@@ -89,7 +89,7 @@ spec:
               chown puppet:puppet /etc/puppetlabs/puppet/eyaml/keys/public_key.pkcs7.pem;
               {{- end }}
           securityContext:
-            runAsUser: 0
+            runAsUser: 1000690000
             runAsNonRoot: false
             privileged: true
           volumeMounts:
